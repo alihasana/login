@@ -1,0 +1,15 @@
+<div >
+
+     Username <input type="text"  ng-model="username" placeholder="Enter your username"> <br>
+      Password <input type="text"  ng-model="password" placeholder="Enter your password"> <br><br>
+
+     <button type="submit" name="button" ng-click="newPage()">Login</button><br><br>
+	 <ui-view></ui-view>
+     No account ? <a ui-sref="state2">Click here !</a>
+
+
+    <!-- We'll also add some navigation: -->
+    <ui-view ui-sref="homepage"></ui-view>
+    <ui-view ui-sref="mismatch"></ui-view>
+
+   </div>
